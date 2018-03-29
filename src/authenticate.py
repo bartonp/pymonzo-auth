@@ -6,6 +6,7 @@ from ConfigParser import ConfigParser
 
 # Setup PyMonzo to be the correct redirect url
 pymonzo.monzo_api.config.PYMONZO_REDIRECT_URI = 'http://127.0.0.1:8080/monzo/auth'
+pymonzo.monzo_api.config.REDIRECT_URI = 'http://127.0.0.1:8080/monzo/auth'
 
 # Read the api_info.conf
 conf = ConfigParser()
