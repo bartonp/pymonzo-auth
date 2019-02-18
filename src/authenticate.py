@@ -14,7 +14,7 @@ conf.read('api_info.conf')
 data = dict(conf.items('monzo'))
 
 # Build up the URL to get the token
-url = 'https://auth.getmondo.co.uk/?client_id={}&response_type=code&redirect_uri={}&state={}'
+url = 'https://auth.monzo.com/?client_id={}&response_type=code&redirect_uri={}&state={}'
 redirect_url = pymonzo.monzo_api.config.PYMONZO_REDIRECT_URI
 state = uuid.uuid4()
 state = '{}'.format(state)
